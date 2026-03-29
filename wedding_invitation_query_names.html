@@ -28,9 +28,9 @@
       font-family: 'Montserrat', sans-serif;
       color: var(--text);
       background:
-              radial-gradient(circle at top left, rgba(110,179,229,0.18), transparent 35%),
-              radial-gradient(circle at bottom right, rgba(15,106,168,0.12), transparent 30%),
-              linear-gradient(180deg, #fbfaf8 0%, #f3f7fb 100%);
+        radial-gradient(circle at top left, rgba(110,179,229,0.18), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(15,106,168,0.12), transparent 30%),
+        linear-gradient(180deg, #fbfaf8 0%, #f3f7fb 100%);
       overflow-x: hidden;
     }
 
@@ -252,7 +252,7 @@
     }
 
     .grid-2 {
-
+      
     }
 
     .card {
@@ -377,8 +377,8 @@
       padding: 32px;
       text-align: center;
       background:
-              linear-gradient(135deg, rgba(15,106,168,0.95), rgba(39,140,201,0.85)),
-              url('wed_timeline.jpg') center/cover;
+        linear-gradient(135deg, rgba(15,106,168,0.95), rgba(39,140,201,0.85)),
+        url('wed_timeline.jpg') center/cover;
       color: white;
       border-radius: 30px;
       box-shadow: var(--shadow);
@@ -482,288 +482,288 @@
   </style>
 </head>
 <body>
-<canvas id="fireworks"></canvas>
-<div class="floating-hearts" id="hearts"></div>
+  <canvas id="fireworks"></canvas>
+  <div class="floating-hearts" id="hearts"></div>
 
-<main>
-  <section class="hero">
-    <div class="container">
-      <div class="hero-card">
-        <div class="photo-wrap">
-          <img src="wed_cover.jpg" alt="Максим и Валентина" />
-        </div>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div class="photo-wrap">
+            <img src="wed_cover.jpg" alt="Максим и Валентина" />
+          </div>
 
-        <div class="hero-content">
-          <div class="eyebrow">Wedding Day</div>
-          <h1>Максим <span class="amp">&</span> Валентина</h1>
-          <p class="subtitle">С любовью приглашаем вас разделить с нами самый важный день нашей жизни</p>
-          <div class="date-chip">17 июня 2026</div>
-          <p class="lead" id="guestText">
-            Дорогие <span id="guestNames">Евгений и Елена</span>, совсем скоро наступит день, который будет для нас особенным — день нашей свадьбы.
-            Нам будет очень тепло и радостно видеть рядом близких людей и провести этот день вместе.
-          </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#program">Смотреть программу дня</a>
-            <button class="btn btn-secondary" id="fireworksBtn">Запустить салют ✨</button>
+          <div class="hero-content">
+            <div class="eyebrow">Wedding Day</div>
+            <h1>Максим <span class="amp">&</span> Валентина</h1>
+            <p class="subtitle">С любовью приглашаем вас разделить с нами самый важный день нашей жизни</p>
+            <div class="date-chip">17 июня 2026</div>
+            <p class="lead" id="guestText">
+              Дорогие <span id="guestNames">Евгений и Елена</span>, совсем скоро наступит день, который будет для нас особенным — день нашей свадьбы.
+              Нам будет очень тепло и радостно видеть рядом близких людей и провести этот день вместе.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#program">Смотреть программу дня</a>
+              <button class="btn btn-secondary" id="fireworksBtn">Запустить салют ✨</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section reveal">
-    <div class="container grid-2">
-      <!-- <div class="card image-card">
-        <img src="wed_text.jpg" alt="Текст приглашения" />
-      </div> -->
-      <div class="card countdown-card">
-        <h2 class="section-title" style="text-align:left; margin-bottom:6px;">До нашей встречи</h2>
-        <p style="margin:0; line-height:1.8; color:var(--muted);">
-          Мы с волнением считаем дни до этого момента и будем счастливы увидеть вас рядом.
+    <section class="section reveal">
+      <div class="container grid-2">
+        <!-- <div class="card image-card">
+          <img src="wed_text.jpg" alt="Текст приглашения" />
+        </div> -->
+        <div class="card countdown-card">
+          <h2 class="section-title" style="text-align:left; margin-bottom:6px;">До нашей встречи</h2>
+          <p style="margin:0; line-height:1.8; color:var(--muted);">
+            Мы с волнением считаем дни до этого момента и будем счастливы увидеть вас рядом.
+          </p>
+          <div class="countdown-grid" id="countdown">
+            <div class="count-box"><b>00</b><span>дней</span></div>
+            <div class="count-box"><b>00</b><span>часов</span></div>
+            <div class="count-box"><b>00</b><span>минут</span></div>
+            <div class="count-box"><b>00</b><span>секунд</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="program">
+      <div class="container">
+        <h2 class="section-title">Тайминг дня</h2>
+        <p class="section-text">
+          Ниже собрали программу нашего свадебного дня, чтобы вам было удобно ориентироваться.
         </p>
-        <div class="countdown-grid" id="countdown">
-          <div class="count-box"><b>00</b><span>дней</span></div>
-          <div class="count-box"><b>00</b><span>часов</span></div>
-          <div class="count-box"><b>00</b><span>минут</span></div>
-          <div class="count-box"><b>00</b><span>секунд</span></div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon">🥂</div>
+            <div class="timeline-time">14:00</div>
+            <div class="timeline-title">Сбор гостей</div>
+            <div class="timeline-desc">Встречаемся у ЗАГСа, обнимаемся, знакомимся и настраиваемся на праздник.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">💍</div>
+            <div class="timeline-time">14:30</div>
+            <div class="timeline-title">Торжественная регистрация</div>
+            <div class="timeline-desc">Самый трогательный момент, после которого мы официально станем семьёй.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">🍽️</div>
+            <div class="timeline-time">17:30</div>
+            <div class="timeline-title">Банкет</div>
+            <div class="timeline-desc">Уютный вечер, вкусный ужин, тёплые слова, музыка и танцы до счастливой усталости.</div>
+          </div>
+        </div>
+
+        <div class="location-card">
+          <div class="location-inner">
+            <h3>Ресторан «Аристократов»</h3>
+            <p>ул. Краснодонцев, 106</p>
+            <p>Будем очень рады провести этот вечер вместе с вами в тёплой и красивой атмосфере.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section reveal" id="program">
-    <div class="container">
-      <h2 class="section-title">Тайминг дня</h2>
-      <p class="section-text">
-        Ниже собрали программу нашего свадебного дня, чтобы вам было удобно ориентироваться.
-      </p>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-icon">🥂</div>
-          <div class="timeline-time">14:00</div>
-          <div class="timeline-title">Сбор гостей</div>
-          <div class="timeline-desc">Встречаемся у ЗАГСа, обнимаемся, знакомимся и настраиваемся на праздник.</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-icon">💍</div>
-          <div class="timeline-time">14:30</div>
-          <div class="timeline-title">Торжественная регистрация</div>
-          <div class="timeline-desc">Самый трогательный момент, после которого мы официально станем семьёй.</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-icon">🍽️</div>
-          <div class="timeline-time">17:30</div>
-          <div class="timeline-title">Банкет</div>
-          <div class="timeline-desc">Уютный вечер, вкусный ужин, тёплые слова, музыка и танцы до счастливой усталости.</div>
+    <section class="section reveal">
+      <div class="container ">
+        <!-- <div class="card">
+          <img src="wed_timeline.jpg" alt="Карточка с таймингом свадьбы" />
+        </div> -->
+        <div class="card gallery-note">
+          <h2 class="section-title" style="text-align:left; margin-bottom:12px;">Мы очень ждём этот день</h2>
+        
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Наверх</a>
+            <button class="btn btn-secondary" onclick="burstFireworks(10)">Ещё салют 🎆</button>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="location-card">
-        <div class="location-inner">
-          <h3>Ресторан «Аристократов»</h3>
-          <p>ул. Краснодонцев, 106</p>
-          <p>Будем очень рады провести этот вечер вместе с вами в тёплой и красивой атмосфере.</p>
-        </div>
+    <footer class="footer reveal">
+      <div class="container">
+        <div class="signature">С любовью, Максим и Валентина</div>
+        <div>Спасибо, что будете с нами в этот важный день</div>
       </div>
-    </div>
-  </section>
+    </footer>
+  </main>
 
-  <section class="section reveal">
-    <div class="container ">
-      <!-- <div class="card">
-        <img src="wed_timeline.jpg" alt="Карточка с таймингом свадьбы" />
-      </div> -->
-      <div class="card gallery-note">
-        <h2 class="section-title" style="text-align:left; margin-bottom:12px;">Мы очень ждём этот день</h2>
+  <script>
+    const guestNamesEl = document.getElementById('guestNames');
 
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Наверх</a>
-          <button class="btn btn-secondary" onclick="burstFireworks(10)">Ещё салют 🎆</button>
-        </div>
-      </div>
-    </div>
-  </section>
+    function normalizeGuestNames(raw) {
+      if (!raw) return '';
 
-  <footer class="footer reveal">
-    <div class="container">
-      <div class="signature">С любовью, Максим и Валентина</div>
-      <div>Спасибо, что будете с нами в этот важный день</div>
-    </div>
-  </footer>
-</main>
-
-<script>
-  const guestNamesEl = document.getElementById('guestNames');
-
-  function normalizeGuestNames(raw) {
-    if (!raw) return '';
-
-    return raw
-            .split(',')
-            .map(name => name.trim())
-            .filter(Boolean)
-            .join(' и ');
-  }
-
-  function applyGuestNamesFromQuery() {
-    const params = new URLSearchParams(window.location.search);
-    const rawGuests = params.get('guests') || params.get('guest') || params.get('name') || '';
-    const guestNames = normalizeGuestNames(decodeURIComponent(rawGuests));
-
-    if (guestNames) {
-      guestNamesEl.textContent = guestNames;
-      document.title = `Свадебное приглашение — ${guestNames}`;
+      return raw
+        .split(',')
+        .map(name => name.trim())
+        .filter(Boolean)
+        .join(' и ');
     }
-  }
 
-  applyGuestNamesFromQuery();
+    function applyGuestNamesFromQuery() {
+      const params = new URLSearchParams(window.location.search);
+      const rawGuests = params.get('guests') || params.get('guest') || params.get('name') || '';
+      const guestNames = normalizeGuestNames(decodeURIComponent(rawGuests));
 
-  const weddingDate = new Date('2026-06-17T14:00:00');
-  const countdownEl = document.getElementById('countdown');
+      if (guestNames) {
+        guestNamesEl.textContent = guestNames;
+        document.title = `Свадебное приглашение — ${guestNames}`;
+      }
+    }
 
-  function formatNum(n) {
-    return String(n).padStart(2, '0');
-  }
+    applyGuestNamesFromQuery();
 
-  function updateCountdown() {
-    const now = new Date();
-    const diff = weddingDate - now;
+    const weddingDate = new Date('2026-06-17T14:00:00');
+    const countdownEl = document.getElementById('countdown');
 
-    if (diff <= 0) {
-      countdownEl.innerHTML = `
+    function formatNum(n) {
+      return String(n).padStart(2, '0');
+    }
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = weddingDate - now;
+
+      if (diff <= 0) {
+        countdownEl.innerHTML = `
           <div class="count-box"><b>💙</b><span>день</span></div>
           <div class="count-box"><b>уже</b><span>настал</span></div>
           <div class="count-box"><b>🎉</b><span>праздник</span></div>
           <div class="count-box"><b>✨</b><span>любви</span></div>
         `;
-      return;
-    }
+        return;
+      }
 
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
-    const seconds = Math.floor((diff / 1000) % 60);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
 
-    countdownEl.innerHTML = `
+      countdownEl.innerHTML = `
         <div class="count-box"><b>${formatNum(days)}</b><span>дней</span></div>
         <div class="count-box"><b>${formatNum(hours)}</b><span>часов</span></div>
         <div class="count-box"><b>${formatNum(minutes)}</b><span>минут</span></div>
         <div class="count-box"><b>${formatNum(seconds)}</b><span>секунд</span></div>
       `;
-  }
+    }
 
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
 
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.18 });
+    reveals.forEach(el => observer.observe(el));
+
+    const hearts = document.getElementById('hearts');
+    for (let i = 0; i < 22; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.textContent = i % 3 === 0 ? '✦' : '❤';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (9 + Math.random() * 12) + 's';
+      heart.style.animationDelay = (Math.random() * 8) + 's';
+      heart.style.fontSize = (12 + Math.random() * 18) + 'px';
+      hearts.appendChild(heart);
+    }
+
+    const canvas = document.getElementById('fireworks');
+    const ctx = canvas.getContext('2d');
+    let cw, ch;
+    let particles = [];
+
+    function resizeCanvas() {
+      cw = canvas.width = window.innerWidth * devicePixelRatio;
+      ch = canvas.height = window.innerHeight * devicePixelRatio;
+      ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    class Particle {
+      constructor(x, y, angle, speed, color) {
+        this.x = x;
+        this.y = y;
+        this.vx = Math.cos(angle) * speed;
+        this.vy = Math.sin(angle) * speed;
+        this.life = 80 + Math.random() * 25;
+        this.alpha = 1;
+        this.color = color;
+        this.size = 2 + Math.random() * 2.2;
+        this.gravity = 0.035 + Math.random() * 0.02;
+      }
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        this.vy += this.gravity;
+        this.vx *= 0.992;
+        this.alpha -= 0.012;
+        this.life -= 1;
+      }
+      draw() {
+        ctx.save();
+        ctx.globalAlpha = Math.max(this.alpha, 0);
+        ctx.beginPath();
+        ctx.fillStyle = this.color;
+        ctx.shadowBlur = 12;
+        ctx.shadowColor = this.color;
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    function randomColor() {
+      const colors = ['#ffffff', '#9fd6ff', '#6eb3e5', '#c6e7ff', '#ffd8a8', '#fef3c7'];
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function explode(x, y, amount = 44) {
+      for (let i = 0; i < amount; i++) {
+        const angle = (Math.PI * 2 * i) / amount + Math.random() * 0.3;
+        const speed = 1.8 + Math.random() * 4.5;
+        particles.push(new Particle(x, y, angle, speed, randomColor()));
+      }
+    }
+
+    function animateFireworks() {
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      particles = particles.filter(p => p.life > 0 && p.alpha > 0);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animateFireworks);
+    }
+    animateFireworks();
+
+    function burstFireworks(rounds = 6) {
+      for (let i = 0; i < rounds; i++) {
+        setTimeout(() => {
+          const x = 80 + Math.random() * (window.innerWidth - 160);
+          const y = 60 + Math.random() * (window.innerHeight * 0.45);
+          explode(x, y, 36 + Math.floor(Math.random() * 26));
+        }, i * 260);
+      }
+    }
+
+    document.getElementById('fireworksBtn').addEventListener('click', () => burstFireworks(8));
+    window.addEventListener('load', () => setTimeout(() => burstFireworks(5), 800));
+    window.addEventListener('click', (e) => {
+      if (e.target.closest('.btn')) return;
+      explode(e.clientX, e.clientY, 34);
     });
-  }, { threshold: 0.18 });
-  reveals.forEach(el => observer.observe(el));
-
-  const hearts = document.getElementById('hearts');
-  for (let i = 0; i < 22; i++) {
-    const heart = document.createElement('div');
-    heart.className = 'heart';
-    heart.textContent = i % 3 === 0 ? '✦' : '❤';
-    heart.style.left = Math.random() * 100 + 'vw';
-    heart.style.animationDuration = (9 + Math.random() * 12) + 's';
-    heart.style.animationDelay = (Math.random() * 8) + 's';
-    heart.style.fontSize = (12 + Math.random() * 18) + 'px';
-    hearts.appendChild(heart);
-  }
-
-  const canvas = document.getElementById('fireworks');
-  const ctx = canvas.getContext('2d');
-  let cw, ch;
-  let particles = [];
-
-  function resizeCanvas() {
-    cw = canvas.width = window.innerWidth * devicePixelRatio;
-    ch = canvas.height = window.innerHeight * devicePixelRatio;
-    ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
-  }
-  resizeCanvas();
-  window.addEventListener('resize', resizeCanvas);
-
-  class Particle {
-    constructor(x, y, angle, speed, color) {
-      this.x = x;
-      this.y = y;
-      this.vx = Math.cos(angle) * speed;
-      this.vy = Math.sin(angle) * speed;
-      this.life = 80 + Math.random() * 25;
-      this.alpha = 1;
-      this.color = color;
-      this.size = 2 + Math.random() * 2.2;
-      this.gravity = 0.035 + Math.random() * 0.02;
-    }
-    update() {
-      this.x += this.vx;
-      this.y += this.vy;
-      this.vy += this.gravity;
-      this.vx *= 0.992;
-      this.alpha -= 0.012;
-      this.life -= 1;
-    }
-    draw() {
-      ctx.save();
-      ctx.globalAlpha = Math.max(this.alpha, 0);
-      ctx.beginPath();
-      ctx.fillStyle = this.color;
-      ctx.shadowBlur = 12;
-      ctx.shadowColor = this.color;
-      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.restore();
-    }
-  }
-
-  function randomColor() {
-    const colors = ['#ffffff', '#9fd6ff', '#6eb3e5', '#c6e7ff', '#ffd8a8', '#fef3c7'];
-    return colors[Math.floor(Math.random() * colors.length)];
-  }
-
-  function explode(x, y, amount = 44) {
-    for (let i = 0; i < amount; i++) {
-      const angle = (Math.PI * 2 * i) / amount + Math.random() * 0.3;
-      const speed = 1.8 + Math.random() * 4.5;
-      particles.push(new Particle(x, y, angle, speed, randomColor()));
-    }
-  }
-
-  function animateFireworks() {
-    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-    particles = particles.filter(p => p.life > 0 && p.alpha > 0);
-    particles.forEach(p => {
-      p.update();
-      p.draw();
-    });
-    requestAnimationFrame(animateFireworks);
-  }
-  animateFireworks();
-
-  function burstFireworks(rounds = 6) {
-    for (let i = 0; i < rounds; i++) {
-      setTimeout(() => {
-        const x = 80 + Math.random() * (window.innerWidth - 160);
-        const y = 60 + Math.random() * (window.innerHeight * 0.45);
-        explode(x, y, 36 + Math.floor(Math.random() * 26));
-      }, i * 260);
-    }
-  }
-
-  document.getElementById('fireworksBtn').addEventListener('click', () => burstFireworks(8));
-  window.addEventListener('load', () => setTimeout(() => burstFireworks(5), 800));
-  window.addEventListener('click', (e) => {
-    if (e.target.closest('.btn')) return;
-    explode(e.clientX, e.clientY, 34);
-  });
-</script>
+  </script>
 </body>
 </html>
